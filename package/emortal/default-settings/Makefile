@@ -33,6 +33,12 @@ define Package/default-settings-chn
   DEPENDS:=+default-settings +@LUCI_LANG_zh_Hans +luci-i18n-base-zh-cn
 endef
 
+define Package/default-settings-twn
+  $(Package/default-settings)
+  TITLE+= (Optimize for TWN users)
+  DEPENDS:=+default-settings +@LUCI_LANG_zh_Hant +luci-i18n-base-zh-tw
+endef
+
 define Build/Compile
 endef
 
@@ -50,5 +56,14 @@ define Package/default-settings-chn/install
 	po2lmo ./i18n/more.zh_Hans.po $(1)/usr/lib/lua/luci/i18n/more.zh-cn.lmo
 endef
 
+define Package/default-settings-twn/install
+	$(INSTALL_DIR) $(1)/etc/uci-defaults
+	$(INSTALL_BIN) ./files/99-default-settings-tchinese $(1)/etc/uci-defaults/
+
+	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
+	po2lmo ./i18n/default.zh_Hant.po $(1)/usr/lib/lua/luci/i18n/default.zh-tw.lmo
+endef
+
 $(eval $(call BuildPackage,default-settings))
 $(eval $(call BuildPackage,default-settings-chn))
+$(eval $(call BuildPackage,default-settings-twn))

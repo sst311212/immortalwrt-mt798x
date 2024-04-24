@@ -1,0 +1,56 @@
+msgid "Temperature"
+msgstr "溫度"
+
+msgid "Online Users"
+msgstr "線上用戶"
+
+msgid "DNS Redirect"
+msgstr "DNS 重導向"
+
+msgid "Redirect client DNS to dnsmasq"
+msgstr "重導向使用者 DNS 給 dnsmasq"
+
+msgid "Disable IPv6 DNS forwards"
+msgstr "禁止轉發 IPv6 DNS"
+
+msgid "Filter IPv6(AAAA) DNS Query Name Resolve"
+msgstr "過濾 IPv6(AAAA) DNS 域名查詢解析"
+
+msgid "Minimum TTL to send to clients"
+msgstr "發送給使用者的最小 TTL"
+
+msgid "Modify DNS entries minimum TTL (max is 86400, 0 is no modify)"
+msgstr "修改 DNS 條目的最小 TTL (最大值為86400, 0等於不修改)"
+
+msgid "Reflection zones"
+msgstr "映射區域"
+
+msgid "Zones from which reflection rules shall be created. If unset, only the destination zone is used."
+msgstr "為指定的區域建立映射規則，如果未設定則只使用目標區域"
+
+msgid "Ethernet Information"
+msgstr "連接埠訊息"
+
+msgid "Ethernet Name"
+msgstr "連接埠名稱"
+
+msgid "Link Status"
+msgstr "連線狀態"
+
+msgid "Speed"
+msgstr "速率"
+
+msgid "Duplex"
+msgstr "工作模式"
+
+msgid "Link Up"
+msgstr "已連接"
+
+msgid "Link Down"
+msgstr "未連接"
+
+msgid "Full Duplex"
+msgstr "全雙工"
+
+msgid "Half Duplex"
+msgstr "半雙工"
